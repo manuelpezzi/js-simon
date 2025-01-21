@@ -32,3 +32,9 @@ function startCountdown() {
         }
     }, 1000)
 }
+function showAnswerForm() {
+    numberListEl.innerHTML = '';
+    numberListEl.classList.add('d-none')
+    instructionsEl.textContent = 'inserisci i numeri che ricordi:';
+    answerFormEl.classList.remove('d-none');
+}
