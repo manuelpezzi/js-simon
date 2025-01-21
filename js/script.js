@@ -8,7 +8,7 @@ const messageEl = document.getElementById('message');
 
 
 let randomNumbers = [];
-let countdown = 5;
+let countdown = 10;
 
 
 function generateRandomNumbers(count, min, max) {
