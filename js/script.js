@@ -63,3 +63,14 @@ function checkAnswers(event) {
     }
     messageEl.textContent = `Hai indovinato ${correctNumbers.length} numeri: ${correctNumbers.join(', ')}`;
 }
+function initGame() {
+    randomNumbers = generateRandomNumbers(5, 1, 50);
+    for (let i = 0; i < randomNumbers.length; i++) {
+        const li = document.createElement('li');
+        li.textContent = randomNumbers[i];
+        li.classList.add('fs-3', 'fw-bold');
+        numbersListEl.appendChild(li);
+    }
+
+    startCountdown();
+}
